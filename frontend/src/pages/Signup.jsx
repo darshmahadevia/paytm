@@ -19,8 +19,10 @@ export default function Signup() {
             });
 
             localStorage.setItem('token', response.data.token);
+            console.log(response.data.token);
             navigate('/dashboard');
         } catch (err) {
+            console.error('Signup error:', err);
             alert('Signup failed — check your inputs '
             );
         }
@@ -70,7 +72,7 @@ export default function Signup() {
                     onClick={handleSignup}
                     className='w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded transition-colors'
                 >
-                    Sign Up
+                    Sign In
                 </button>
 
                 <p className='text-gray-400 text-sm text-center mt-4'>
