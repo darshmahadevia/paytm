@@ -41,4 +41,4 @@ export default function Signup() {
       </p>
     </Card>
   )
-}
+} XMLDocument
